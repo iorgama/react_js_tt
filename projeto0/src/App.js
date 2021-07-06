@@ -16,27 +16,31 @@ const Compras = () => {
     </div>
   );
 };
-const Titulo = () => {
+const Titulo = ({ children }) => {
   const numero = Math.random() * 1000;
-  return <h1>Testando: {numero}</h1>;
+  return (
+    <h1>
+      Testando: {numero}, {children}
+    </h1>
+  );
 };
 
-const Button = () => {
+const Button = ({ label }) => {
   function handleClick(event) {
     console.log(event.target.innerText);
   }
-  return <button onClick={handleClick}>Comprar</button>;
+  return <button onClick={handleClick}>{label}</button>;
 };
 
 function App() {
   return (
     <div className="App">
       <Compras />
-      <Titulo />
-      <Button />
+      <Titulo> Isso é o children</Titulo>
+      <Button label="Comprar Teste" />
       <div>
         Compre aqui também.
-        <Button />
+        <Button label="Comprar" />
       </div>
     </div>
   );
