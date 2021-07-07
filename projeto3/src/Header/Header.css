@@ -1,0 +1,29 @@
+.menu-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+.menu-section p {
+  color: #009688;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.nav-section ul {
+  display: flex;
+}
+
+.nav-section a {
+  color: #fff;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #009688;
+  border-radius: 8px;
+}

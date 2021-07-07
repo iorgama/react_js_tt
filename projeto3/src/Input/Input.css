@@ -1,0 +1,34 @@
+.input-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.input-form input {
+  max-width: 500px;
+  flex: 1;
+  margin: 5px 10px 5px 0;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .input-form input {
+    margin: 10px 0;
+  }
+
+  .input-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

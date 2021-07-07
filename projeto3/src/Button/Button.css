@@ -1,0 +1,21 @@
+button {
+  text-transform: uppercase;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #009688;
+}
+
+.card-button {
+  padding: 15px;
+  align-self: flex-end;
+}
+
+.input-button {
+  padding: 20px 10px;
+}
