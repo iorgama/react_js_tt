@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Input from './Input/Input';
 import Card from './Card/Card';
 
+const menu = ['Home', 'Services', 'Showcase', 'Packages', 'Contact'];
 const places = [
   {
     id: 1,
@@ -30,7 +31,7 @@ const places = [
 function App() {
   return (
     <div>
-      <Header />
+      <Header menu={menu} />
       <Input />
       <Card places={places} />
     </div>

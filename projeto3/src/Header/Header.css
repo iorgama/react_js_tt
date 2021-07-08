@@ -15,22 +15,6 @@
   text-transform: uppercase;
 }
 
-.nav-section ul {
-  padding: 10px;
-  display: flex;
-}
-
-.nav-section a {
-  padding: 8px;
-  margin: 5px;
-  color: #fff;
-}
-
-a:hover {
-  background-color: #009688;
-  border-radius: 8px;
-}
-
 @media (max-width: 800px) {
   .menu-section {
     font-size: 1rem;

@@ -5,9 +5,9 @@ import './Card.css';
 const Card = ({ places }) => {
   return (
     <section className="card-section">
-      {places.map(({ id, name, quantity, price, food }) => {
-        return <CardItem key={id} {...{ name, quantity, price, food }} />;
-      })}
+      {places.map(({ id, name, quantity, price, food }) => (
+        <CardItem key={id} {...{ name, quantity, price, food }} />
+      ))}
     </section>
   );
 };
